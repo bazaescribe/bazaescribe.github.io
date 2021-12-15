@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Listado-Centros-vacunacion</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="identity">
+            <img src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+            <div>
+                <h6>GUINEA ECUATORIAL</h6>
+                <p class="p2">Página Web Institucional del Gobierno</p>
+            </div>
+        </div>
+
+        <div class="search">
+            <input class="input-search" type="text" placeholder="Busca en GUEC.GOV">
+            <button class="primary-button">Buscar</button>
+        </div>
+
+        <div class="custom-select">
+            <select name="Idioma" id="language">
+                <option value="volvo">Español</option>
+                <option value="saab">Francés</option>
+                <option value="opel"> Portugués</option>
+                <option value="audi">Fang</option>
+                <option value="opel"> Bubi</option>
+                <option value="audi">Annobonés</option>
+            </select>
+        </div>
+
+        <a class="login" href=""">
+            <p class=" login-button">Iniciar sesión</p>
+        </a>
+    </header>
+
+    <div class="title-area">
+        <h4>SOLICITUD DE PASAPORTE</h4>
+        <p class="p3">Tramita tu pasaporte en tu módulo más cercano</p>
+
+    </div>
+
+    <div class="body">
+
+        <div class="intro-area">
+            <p>Llena el formulario que se presenta a continuación, una vez terminado te recomendamos imprimir el
+                comprobante para que no tengas ningún inconveniente al momento de presentarte en tu módulo.</p>
+
+            <ol>
+                <li>Llena el siguiente formulario.</li>
+                <li>Ubica tu módulo más cercano.</li>
+                <li>Haz una cita</li>
+                <li>Junta los documentos que se solicitan</li>
+            </ol>
+        </div>
+
+        <form>
+
+            <h4>Formulario de solicitud de pasaporte</h4>
+
+            <div class="section">
+                <h6>Datos personales</h6>
+
+                <div class="form-section">
+                    <div class="primary-input">
+                        <p>Nombre(s)</p>
+                        <div class="input-area">
+                            <input type="text" id="name" placeholder="Nombre" onkeyup="manage(this)" autocomplete="on"/>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Primer apellido</p>
+                        <div class="input-area">
+                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)" autocomplete="on"/>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Segundo apellido</p>
+                        <div class="input-area">
+                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)" autocomplete="on"/>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Sexo (biológico)</p>
+                        <div class="radio-buttons">
+                            <div class="options">
+                                <input class="input-radio" type="radio" id="Hombre" name="Sexo" value="Hombre">
+                                <label for="Hombre">Hombre</label>
+                            </div>
+
+                            <div class="options">
+                                <input class="input-radio" type="radio" id="Mujer" name="Sexo" value="Mujer">
+                                <label for="Mujer">Mujer</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Edad</p>
+                        <div class="input-area">
+                            <input type="text" name="Edad" placeholder="Edad" autocomplete="on" onkeyup="manage(this)"/>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h6>Datos de contacto</h6>
+
+                <div class="form-section">
+                    <div class="primary-input">
+                        <p>Correo electrónico</p>
+                        <div class="input-area">
+                            <input type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="on" onkeyup="manage(this)"/>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Teléfono 1</p>
+                        <div class="input-area">
+                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on" onkeyup="manage(this)"/>
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Teléfono 2</p>
+                        <div class="input-area">
+                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on" />
+                        </div>
+                        <p class="p2">Opcional</p>
+                    </div>
+
+                    
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h6>Dirección</h6>
+
+                <div class="form-section">
+                    <div class="primary-input">
+                        <p>Calle</p>
+                        <div class="input-area">
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on" onkeyup="manage(this)"/>
+                        </div>
+                    </div>
+
+                    <div class="secundary-input">
+                        <p>No. Exterior</p>
+                        <div class="input-area">
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on" onkeyup="manage(this)" />
+                        </div>
+                    </div>
+
+                    <div class="secundary-input">
+                        <p>No. Interior</p>
+                        <div class="input-area">
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on"  />
+                        </div>
+                        <p class="p2">Opcional</p>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Región</p>
+                        <div class="input-area">
+                            <input type="text" name="Region" placeholder="Región" autocomplete="on"onkeyup="manage(this)" />
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Provinica</p>
+                        <div class="input-area">
+                            <input type="text" name="Provincia" placeholder="Provincia" autocomplete="on" onkeyup="manage(this)" />
+                        </div>
+                    </div>
+
+                    <div class="primary-input">
+                        <p>Municipio</p>
+                        <div class="input-area">
+                            <input type="text" name="Municipio" placeholder="Municipio" autocomplete="on" onkeyup="manage(this)" />
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </form>          
+
+        <div class="button-area">
+            <a href="centros-de-tramite.html">
+                <button type="submit" class="primary-button-action" id="submit" >Siguiente</button>
+            </a>
+
+         
+           
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="up">
+            <div class="col">
+                <a href="">
+                    <p class="p-white">Portada</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Últimas noticias</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Presidencia</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Gobierno</p>
+                </a>
+
+
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="p-white">África</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Economía</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Cultura</p>
+                </a>
+
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="p-white">Deportes</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Estadísticas INEGE</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Fototeca</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="down">
+
+            <div class="text">
+                <a href="">
+                    <p>Deportes</p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Aplicaciones móviles </p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Términos y condiciones</p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Aviso de privacidad</p>
+                </a>
+
+            </div>
+
+            <div class="image-footer">
+                <img class="logo-footer" src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+                <div class="text">
+                    <h6>GUINEA</h6>
+                    <h6>ECUATORIAL</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+<script>
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+
+        // Loop through each element.
+        for (i = 0; i < ele.length; i++) {
+
+            // Check the element type.
+            if (ele[i].type == 'text' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }
+</script>
+
+</html>

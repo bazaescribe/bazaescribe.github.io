@@ -1,0 +1,1271 @@
+/* ----------------------- Responisive ----------------------- */
+* {
+    
+    box-sizing: border-box;
+  }
+
+/*  desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+    background: #F8F8F8;
+}
+
+
+/* ----------------------- General ----------------------- */
+
+:root{
+    --primary-blue: #1577D2;
+    --primary-dark: #061F38;
+    --white-gray:#E8E8E8;
+    --gray: #A3A3A3;
+    --error: #FB4E4E;
+    --warning: #F6A609;
+    --succes: #1AB759;
+    --dark: #25282B;
+    --light-blue: #F2F9FF;
+    --primary-soft: #90C3F4;
+}
+
+body{
+    margin: 0px
+}
+
+/* ----------------------- Tipografía ----------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,li,label {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    margin: 0px 0px 0px 0px;
+    
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+h4{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+p,label{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p-bold{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p-medium{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.p2{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.p3{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.p3-blue{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.p-white{
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    margin: 8px;
+    
+}
+
+.p-toast{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+}
+
+.cuerpo3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+
+/* ----------------------- Botones ----------------------- */
+
+.primary-button{
+    background: var(--primary-blue);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+
+
+.action-buttons {
+    flex: 50px;
+    padding: 1em 5em 1em 5em;
+    gap: 10px;
+}
+
+.primary-button-action{
+    background: var(--primary-blue);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: none;
+    width: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.primary-button-action:hover{
+    background-color: var(--primary-dark);
+}
+
+.primary-button-action:disabled{
+    background: var(--gray);
+}
+
+.secundary-button{
+    background: white;
+    border-radius: 6px;
+    color: var(--primary-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.secondary-button-action{
+    background: var(--white);
+    border-radius: 6px;
+    color: var(--primary-dark);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: none;
+    width: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 32px;
+}
+
+.secondary-button-action:hover{
+    background: var(--light-blue);
+}
+
+
+.primary-button:hover{
+    background: var(--primary-dark);
+}
+
+.third-button{
+    background: var(--primary-blue);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 80px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.third-button:hover{
+    background: var(--primary-dark);
+}
+
+.four-button{
+    background: var(--primary-blue);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 80px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.four-button:hover{
+    background: var(--primary-dark);
+}
+
+
+
+
+.login{
+    text-decoration: none;
+}
+
+.login-button:hover{
+    color: var(--primary-blue);
+}
+
+.line-button{
+    color: var(--primary-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: none;
+    background: none;
+
+}
+
+.line-button:hover{
+    color: var(--primary-dark);
+}
+
+.text-button:hover{
+    color: var(--primary-blue);
+}
+
+.button-text{
+    font-family: 'Montserrat', sans-serif;
+    padding: .5em .62em;
+    color: var(--primary-blue);
+    font-weight: 500;
+    font-size: 1.125rem;
+    transition: 200ms ease-out all;
+}
+.button-text:hover{
+    color: var(--primary-dark);
+}
+
+/* ----------------------- Header ----------------------- */
+
+header{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+
+}
+.identity{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .identity img{
+    margin-right: 16px;
+    background: white;
+}
+
+.search{
+    border: 1px solid var(--primary-dark);
+    width: 419px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 0px 8px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.search:hover{
+    background: var(--light-blue);
+}
+
+
+
+
+#language{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(Assets/Images/Dropdown-close.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: none;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 400;
+    
+
+  
+}
+
+#lnguage:active{
+    border: none;
+}
+
+
+/* ----------------------- Card ----------------------- */
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 80px;
+    min-width: 800px;
+    margin-bottom: 32px;
+}
+
+.big-card{
+    background: white;
+    margin: 48px;
+    padding: 24px;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align:left;
+}
+
+.bigger-card{
+    background: white;
+    margin: 48px;
+    padding: 15px;
+    width: 815px;
+    height: 770px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px;
+    text-align:center;
+}
+
+.button-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------- Inputs ----------------------- */
+
+input{
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+input:active{
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+input[type=text] {
+    color: var(--gray);
+}
+
+.input-radio{
+    border: none;
+    background: none;
+    width: 24px;
+}
+
+
+.input-medium{
+    padding: 12px 16px;
+    width: 317px;
+    color: var(--gray);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    margin: 4px 0px;
+    
+    
+}
+
+.input-small{
+    padding: 12px 16px;
+    width: 149px;
+    color: var(--gray);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    margin: 4px 0px;
+    
+    
+}
+
+.input-group{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 24px;
+
+}
+
+
+
+/* ----------------------- Input buscador header ----------------------- */
+
+.search{
+    border: 1px solid var(--primary-dark);
+    width: 419px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 0px 8px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.search:hover{
+    background: var(--light-blue);
+}
+
+/* ----------------------- Input general ----------------------- */
+ 
+/* texto+input */
+.primary-input{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.secundary-input{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 24px;
+
+}
+
+.input-area{
+    padding: 12px 16px;
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    margin: 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-area:hover{
+    background: var(--light-blue);
+    color: var(--primary-blue);
+}
+
+.input-area:focus{
+    border: 1px solid var(--primary-blue);
+}
+
+.input-area:active{
+    border: 1px solid var(--primary-blue);
+}
+
+
+
+
+.input-area{
+    padding: 12px 16px;
+    width: 100%;
+    color: var(--gray);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    margin: 4px 0px;
+    
+    
+}
+
+.input-medium{
+    padding: 12px 16px;
+    width: 240px;
+    color: var(--gray);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    margin: 4px 0px;
+    
+    
+}
+
+
+.input-group{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 24px;
+
+}
+
+
+/* ----------------------- Input buscador ----------------------- */
+
+.input-search::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+}
+
+.input-search{
+    border: none;
+    padding: 0px 16px 0px 0px;
+    width: 100%;
+    background: transparent;
+}
+
+.input-search:focus{
+    background: transparent;
+    outline: none;
+}
+
+.input-search:active{
+    border: none;
+    outline: none;
+}
+
+
+
+/* ----------------------- Botones card ----------------------- */
+
+.bottom-buttons{
+    margin-top: 24px;
+}
+
+
+/* ----------------------- Title area ----------------------- */
+
+.title-area{
+    
+    padding: 40px 0px;
+    background: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    
+}
+.title-area h4{
+    color: white;
+    margin-bottom: 16px;
+}
+
+
+/* ----------------------- Buscador listado ----------------------- */
+
+.search-list{
+    border: 1px solid var(--primary-dark);
+    width: 318px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 0px 8px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 24px 0px;
+   
+}
+
+/* ----------------------- Filtro de tabla ----------------------- */
+
+.table-filter{
+    background: var(--primary-soft) ;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 66px;
+    margin-bottom: -23px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.select-filter{
+    width: 252px;
+    height: 42px;
+    background: white;
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.select-selected {
+    background-color: white;
+ 
+  }
+#filter{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(Assets/Images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: none;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#lnguage:active{
+    border: none;
+}
+
+
+
+/* ----------------------- tabla ----------------------- */
+
+.list{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 32px;
+    
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+
+td, th{
+    padding: 8px;
+    text-align: left;    
+}
+
+.tr-top{
+    background: var(--primary-blue);
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+}
+
+thead{
+    border-radius: 10px 10px 0px 0px;
+}
+
+th{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    height: 45px;
+}
+
+.first-th{
+    padding-left: 24px;
+}
+
+
+
+
+
+td{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 32px 8px;
+}
+
+.td-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+tbody tr{
+    border-bottom: 1px solid var(--gray);
+    color: var(--primary-dark);
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(244, 244, 244, 0.15);
+    
+  }
+
+tbody tr:nth-child(1) {
+    background: var(--white);
+    color: var(--primary-dark);
+}
+
+
+
+.td-shore{
+    margin: 16px;
+    padding:24px;
+
+}
+
+.td-select{
+    margin: 16px;
+    padding:0px 0px 0px 30px;
+ 
+}
+
+.location-img{
+    margin: 0px 24px 0px 16px;
+}
+
+/* ----------------------- Detalle de centro de vacunación ----------------------- */
+.detalle-centros-vac{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.6em 5em;
+}
+.informacion-del-centro{
+    width: 50vw;
+}
+.informacion-del-centro div{
+    margin-bottom: 2.6em;
+}
+.informacion-del-centro div h4{
+    margin-bottom: .25em;
+}
+.informacion-del-centro div p{
+    line-height: 1.5em;
+}
+.informacion-del-centro div ul{
+    margin: 1em 0;
+}
+.informacion-del-centro div li{
+    margin-bottom: .4em;
+}
+.mapa-centro-vac{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+}
+.mapa-cv {
+    width: 95%;
+    height: 500px;
+    border: 0;
+}
+
+/* ----------------------- Información COVID ----------------------- */
+.preguntas-vac, .map{
+    margin: 2.6em 5em;
+}
+.informacion-vac div h4, .map div h4{
+    margin-bottom: .25em;
+}
+.informacion-vac div p{
+    line-height: 1.5em;
+}
+.informacion-vac div ul{
+    margin: 1em 0;
+}
+.informacion-vac div li{
+    margin-bottom: .4em;
+}
+.map{
+    position: relative;
+}
+
+/* ----------------------- Hotspot ----------------------- */
+
+.marker {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    transition: all 300ms;
+  }
+  
+  .marker1 {
+    left: 639px;
+    top: 251px;
+  }
+
+/* ----------------------- Card popup ----------------------- */
+
+.map-popup p{
+    margin-bottom: .5em;
+    text-align: center;
+    color: var(--dark);
+}
+
+.map-popup .p2{
+    color: var(--primary-dark);
+}
+.map-popup {
+    position: absolute;
+    left: 798px;
+    top: 277px;
+    width: 13.8em;
+    height: auto;
+    padding: 1em 1em 1.6em 1em;
+    background: #ffffff;
+    text-align: center;
+    border-radius: .4em;
+    transition: all 300ms ease-in;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 24px rgba(0,0,0,0.22);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.map-popup:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    margin-top: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 16px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .map-popup.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .map-popup .primary-button{
+      cursor:pointer;
+  }
+/* ----------------------- Toast ----------------------- */
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 649px; 
+    margin-left: -300px;
+    background-color: var(--succes); 
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left; 
+    border-radius: 0px 0px 16px 16px; 
+    padding: 24px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    top: 90px; 
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.icon-toast{
+    margin-right: 24px;
+}
+
+
+#snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animación toast */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {top: 90px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 90px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 90px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 90px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+
+
+/* ----------------------- Modal ----------------------- */
+
+.modal-nhp{
+    padding: 48px 40px;
+    background: white;
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    margin: 0px 0px 40px 0px;
+}
+
+.nhp-image{
+    width: 106px;
+    height: 106px;
+    margin-bottom: 40px;
+    
+}
+
+
+/* ----------------------- Intro area ----------------------- */
+
+.intro-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.intro-area ol{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+
+.resumen{
+    margin-top: 24px;
+}
+
+.resumen .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin-top: 16px;
+    height: 24px;
+
+}
+
+
+
+.resumen .info .p-medium{
+    margin: 0rem .5rem;
+}
+
+.resumen{
+    margin-bottom: 24px;
+}
+
+
+
+/* ----------------------- Formulario ----------------------- */
+
+form{
+    width: 100%;
+}
+
+.form-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.form-section .primary-input .input-area{
+    width: 292px;
+    margin-right: 24px;
+}
+
+.form-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 24px 8px 0px;
+}
+
+.radio-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 24px 8px 0px;
+    width: 292px;
+}
+
+.section{
+    margin: 24px 0px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background: var(--primary-dark);
+}
+
+.form-section .secundary-input .input-area{
+    width: 133px;
+    margin-right: 24px;
+}
+
+/* ----------------------- Cita ----------------------- */
+
+.fecha-hora{
+    margin: 24px 0px;
+
+}
+
+/* ----------------------- Footer ----------------------- */
+
+footer .up{
+    background: var(--primary-dark);
+    padding: 24px 80px;
+    
+
+}
+
+footer .down{
+    background: white;
+    padding: 24px 80px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+
+}
+
+.col a{
+    text-decoration: none;
+}
+
+.col a:hover{
+    text-decoration: underline white;
+}
+
+.bullet{
+    width: 6px;
+    height: 6px;
+    border-radius: 16px;
+    background-color: var(--primary-blue);
+    margin: 0px 16px;
+}
+
+.up{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text a{
+    text-decoration: none;
+}
+
+.text a:hover{
+    text-decoration: underline;
+}
+
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.image-footer{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-footer{
+    margin-right: 16px;
+}
+
+.image-footer .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-footer .text{
+    text-align: left;
+}
+
+/*---------------------Separation Line------------------------*/
+
+.line {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    color: #FFFF00;
+    height: 1px;
+}
+
+hr {
+    width: 86%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/*--------------------------Info-------------------------------*/
+
+.info{
+padding: 0px 80px;
+margin-top: 24px;
+}
+
+
+
+/* ----------------------- Detalle del comprobante de vacunación ----------------------- */
+
+.wide-details {
+    background: white;
+    margin: 48px;
+    padding: 60px;
+    width: 815px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align:left;
+}
+
+.inner-logo {
+    width: 4em;
+    height: auto;
+    margin-right: 16px;
+}
+
+.qr-code-img {
+    width: 10em;
+    height: auto;
+    margin-right: 0px;
+}
+
+.textinfo-datosvacuna {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.textinfo-datosvacunado {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+p .textinfo-datosvacuna {
+    padding-top: 1em;
+    line-height: 24px;
+}
+
+p .textinfo-datosvacunado {
+    padding-top: 1em;
+    line-height: 24px;
+}
+
+.textinfo-comprobante-left {
+    flex: 50%;
+    padding: 10px 0px;
+}
+
+.textinfo-comprobante-right {
+    flex: 50%;
+    padding: 10px 0px;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Listado-Centros-vacunacion</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="identity">
+            <img src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+            <div>
+                <h6>GUINEA ECUATORIAL</h6>
+                <p class="p2">Página Web Institucional del Gobierno</p>
+            </div>
+        </div>
+
+        <div class="search">
+            <input class="input-search" type="text" placeholder="Busca en GUEC.GOV">
+            <button class="primary-button">Buscar</button>
+        </div>
+
+        <div class="custom-select">
+            <select name="Idioma" id="language">
+                <option value="volvo">Español</option>
+                <option value="saab">Francés</option>
+                <option value="opel"> Portugués</option>
+                <option value="audi">Fang</option>
+                <option value="opel"> Bubi</option>
+                <option value="audi">Annobonés</option>
+            </select>
+        </div>
+
+        <a class="login" href=""">
+            <p class=" login-button">Iniciar sesión</p>
+        </a>
+    </header>
+
+    <div class="title-area">
+        <h4>CENTROS DE VACUNACIÓN</h4>
+        <p class="p3">Aquí puedes buscar el centro de vacunación más cercano a tu ubicación</p>
+
+    </div>
+
+    <div class="body">
+
+        <div class="search-list">
+            <input class="input-search" type="text" placeholder="¿Qué quieres buscar?">
+            <button onclick="myFunction()" class="primary-button">Buscar</button>
+        </div>
+
+        <div id="snackbar">
+            <img class="icon-toast" src="../Assets/Images/check-circle.svg" alt="">
+            <p class="p-toast">
+                Se obtuvieron 5 resultados
+            </p>
+        </div>
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("snackbar");
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+        <div class="table-filter">
+            <div class="select-filter">
+                <select name="Filtrar" id="filter">
+                    <option value="0">Filtrar por provincia</option>
+                    <option value="1">Provincia 1</option>
+                    <option value="2"> Provincia 2</option>
+                    <option value="3">Provincia 3</option>
+                    <option value="4"> Provincia 4</option>
+
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="list">
+            <table>
+                <thead>
+                    <tr class="tr-top">
+                        <th class="first-th">Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Horario</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      
+                        
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Carretera Aeropuerto Malabo, Guinea Ecuatorial
+                        </td>
+                        <td>
+                            +240 333 09 45 50
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <button class="primary-button">
+                                Ver información
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                       
+                        
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Cocoteros s/n, Malabo, Bioko Norte
+                        </td>
+                        <td>
+                            +240 222 273 444
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <button class="primary-button">
+                                Ver información
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                       
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Calle Enrique Nvo, 178 - Bioko Norte. Malabo. Guinea Ecuatorial
+                        </td>
+                        <td>
+                            +240 333 09 45 50
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <button class="primary-button">
+                                Ver información
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Carretera Aeropuerto Malabo, Guinea Ecuatorial
+                        </td>
+                        <td>
+                            +240 333 09 45 50
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <button class="primary-button">
+                                Ver información
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                       
+                        
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Calle Enrique Nvo, 178 - Bioko Norte. Malabo. Guinea Ecuatorial
+                        </td>
+                        <td>
+                            +240 333 09 45 50
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <button class="primary-button">
+                                Ver información
+                            </button>
+                        </td>
+                    </tr>
+    
+    
+    
+    
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="up">
+            <div class="col">
+                <a href="">
+                    <p class="p-white">Portada</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Últimas noticias</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Presidencia</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Gobierno</p>
+                </a>
+
+
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="p-white">África</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Economía</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Cultura</p>
+                </a>
+
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="p-white">Deportes</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Estadísticas INEGE</p>
+                </a>
+                <a href="">
+                    <p class="p-white">Fototeca</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="down">
+
+            <div class="text">
+                <a href="">
+                    <p>Deportes</p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Aplicaciones móviles </p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Términos y condiciones</p>
+                </a>
+
+                <div class="bullet"> </div>
+
+                <a href="">
+                    <p>Aviso de privacidad</p>
+                </a>
+
+            </div>
+
+            <div class="image-footer">
+                <img class="logo-footer" src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+                <div class="text">
+                    <h6>GUINEA</h6>
+                    <h6>ECUATORIAL</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
