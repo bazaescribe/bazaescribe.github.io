@@ -1269,3 +1269,13 @@ p .textinfo-datosvacunado {
     flex: 50%;
     padding: 10px 0px;
 }
+
+
+
+/*--------------------------Info-------------------------------*/
+
+.response{
+    padding: 16px;
+    border-radius: 8px;
+    background: #e8e8e8;
+}
