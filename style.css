@@ -1,0 +1,109 @@
+:root{
+    --volt: #DBFF00;
+    --cyan: #19FFFE;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--volt);
+    background: black;
+  }
+  
+::selection {
+    color: var(--volt);
+    background: black;
+}
+
+body{
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.16;}
+
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.5rem;}
+h6{font-size: 1.25rem;}
+
+
+nav{
+    padding: 1rem 2rem;
+}
+
+nav img{
+    width: 104px;
+}
+
+header{
+    display: flex;
+    padding: 2rem 2rem;
+    min-height: 720px;
+}
+
+header div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: block;
+    width: 70%;
+}
+
+.btn{
+    padding: 12px 16px;
+    background: #DBFF00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 250ms ease all;
+}
+
+.btn:hover{
+    background: #19FFFE;
+}
+
+section{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tile{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    overflow: hidden;
+    color: white;
+}
+
+.tile p{
+    font-size: 1.25rem;
+}
+
+.info{
+    display: block;
+    width: 60%;
+}
+
+footer{
+    padding: 2rem 2rem;
+    background: black;
+    color: white;
+    font-size: 0.75rem;
+}
+
+footer img{
+    width: 120px;
+}
